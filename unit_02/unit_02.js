@@ -175,6 +175,7 @@ document.querySelector('.b-17').onclick = t17;
 
 function t18() {
     let a = document.querySelector('.i-18').value;
+    document.querySelector('.out-18').innerHTML= parseFloat(a);
 }
 
 document.querySelector('.b-18').onclick = t18;
@@ -183,7 +184,10 @@ document.querySelector('.b-18').onclick = t18;
 // По нажатию кнопки .b-19 функция t19 дожна в out-19 вывести сумму двух отрицательных чисел из input .i-19-1 и .i-19-2. 
 
 function t19() {
+    let a19 = document.querySelector('.i-19-1').value;
+    let b19 = document.querySelector('.i-19-2').value;
 
+    document.querySelector('.out-19').innerHTML= parseInt(a19) + parseInt(b19);
 }
 
 document.querySelector('.b-19').onclick = t19;
