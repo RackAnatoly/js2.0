@@ -92,7 +92,14 @@ document.querySelector('.b-5').onclick = f5;
 // На странице есть input с классом i-6, куда пользователь может ввести число. Есть кнопка .b-6 которая запускает функцию f6. Функция должна вывести в  .out-6  слово even если число четное и odd если нечетное. Для проверки четности используется целочисленный остаток от деления на 2 (оператор %). Если остаток равен нулю  - четное, нет - нечетное.
 
 function f6(){
+let a = +document.querySelector('.i-6').value;
+let b = document.querySelector('.out-6');
 
+if (a % 2 == 0) {
+   b.innerHTML = 'even';
+} else {
+   b.innerHTML = 'odd';
+}
 }
 
 document.querySelector('.b-6').onclick = f6;
@@ -101,8 +108,13 @@ document.querySelector('.b-6').onclick = f6;
 // Даны 2 input - .i-71 и .i-72, оба - input[type=number]. При нажатии кнопки .b-7 срабатывает функция f7. Функция должна число из .i-71 возвести в степень .i-72, вывести результат в  .out-7. Для возведения в степень можно использовать **, или Math.pow.
 
 function f7(){
+let a = +document.querySelector('.i-71').value;
+let b = +document.querySelector('.i-72').value;
+let c = document.querySelector('.out-7');
 
+c.innerHTML = a ** b;
 }
+
 
 document.querySelector('.b-7').onclick = f7;
 
@@ -110,7 +122,20 @@ document.querySelector('.b-7').onclick = f7;
 // Дан select s-8, который содержит 3 значения: 1, 2, 3. Дана кнопка b-8. При ее  нажатии срабатывает функция f8. Функция должна получить выбранное в select число, потом с помощью switch case сравнить его поочередно с 1, 2, 3. И если число выбрано - 1, то вывести в .out-8 строку one, если 2 - two, если 3 - three. Напоминаю - это программирование. Как указано в задании - так и выводим. Т.е. Three с большой буквы - ошибка!!!
 
 function f8(){
+   let a = +document.querySelector('.s-8').value;
+   let b = document.querySelector('.out-8');
 
+   switch(a) {
+      case 1: 
+      b.innerHTML = 'one';
+      break;
+      case 2: 
+      b.innerHTML = 'two';
+      break;
+      case 3: 
+      b.innerHTML = 'three';
+      break;
+   }
 }
 
 document.querySelector('.b-8').onclick = f8;
