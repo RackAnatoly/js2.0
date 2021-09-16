@@ -73,7 +73,16 @@ document.querySelector('.b-4').onclick = f4;
 // На странице есть input c классом i-5, куда пользователь может ввести число. Есть кнопка b-5 которая запускает функцию f5. Функция должна вывести в .out-5 символ 'm' если число меньше нуля, 0 если число равно нулю и число 1 если больше.
 
 function f5(){
+let a = +document.querySelector('.i-5').value;
+let b = document.querySelector('.out-5');
 
+if ( a < 0){
+   b.innerHTML = 'm';
+} else if (a == 0) {
+   b.innerHTML = 0;
+} else {
+   b.innerHTML = 1;
+}
 }
 
 document.querySelector('.b-5').onclick = f5;
