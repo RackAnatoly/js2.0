@@ -22,7 +22,12 @@ let a21 = 45;
 let a22 = 32;
 
 function f2(){
-
+let b = document.querySelector('.out-2');
+if (a21 > a22){
+   b.innerHTML = a21;
+} else {
+   b.innerHTML = a22;
+}
 }
 
 document.querySelector('.b-2').onclick = f2;
@@ -33,6 +38,15 @@ document.querySelector('.b-2').onclick = f2;
 // Проведите самостоятельный тест работы, введите пары чисел 4 и 9, 9 и 22, 5 и 111.
 
 function f3(){
+   let a = +document.querySelector('.i-31').value;
+   let b = +document.querySelector('.i-32').value;
+   let c = document.querySelector('.out-3');
+
+   if (a > b){
+      c.innerHTML = a;
+   } else {
+      c.innerHTML = b;
+   }
 
 }
 
@@ -43,7 +57,14 @@ document.querySelector('.b-3').onclick = f3;
 // Пользователь вводит в .i-4 год своего рождения. Есть кнопка .b-4 которая запускает функцию f4. Функция должна вывести в .out-4 число 1 если пользователю больше или равно 18 лет, и 0 если меньше.
 
 function f4(){
+let a = +document.querySelector('.i-4').value;
+let b = document.querySelector('.out-4');
 
+if ((2021-a)>=18){
+   b.innerHTML = 1;
+} else {
+   b.innerHTML = 0;
+}
 }
 
 document.querySelector('.b-4').onclick = f4;
