@@ -148,8 +148,17 @@ document.querySelector('.b-8').onclick = f8;
 //  В противном случае, вывести 0.
 
 function f9(){
+   let a = +document.querySelector('.i-9').value;
+   let b = document.querySelector('.out-9');
 
-}
+   
+    if (a <= 32 ) {
+       b.innerHTML = 1;
+    } else if (a >= 33 && <= 43){
+       b.innerHTML = 2;
+
+    }
+   }
 
 document.querySelector('.b-9').onclick = f9;
 
