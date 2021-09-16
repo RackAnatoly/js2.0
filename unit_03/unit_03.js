@@ -156,7 +156,10 @@ function f9() {
       b.innerHTML = 1;
    } else if (a >= 33 && a <= 43) {
       b.innerHTML = 2;
-
+   } else if (a >= 44 && a <= 64) {
+      b.innerHTML = 3;
+   } else {
+      b.innerHTML = 0;
    }
 }
 
