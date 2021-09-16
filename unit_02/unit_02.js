@@ -200,6 +200,7 @@ let count = 0;
 function t20() {
     count = count + 1; // можно сократить count++
     // тут допишите вывод в out-20
+    document.querySelector('.out-20').innerHTML = count;
 }
 
 document.querySelector('.b-20').onclick = t20;
