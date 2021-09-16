@@ -131,8 +131,8 @@ document.querySelector('.b-13').onclick = t13;
 // По нажатию кнопки .b-14 выполняется функция t14. Она заменяет значение value в input.i-14 на строку 'Go';
 
 function t14() {
-
-
+    let a14 = document.querySelector('.i-14');
+    a14.value = 'Go';
 }
 
 document.querySelector('.b-14').onclick = t14;
@@ -141,7 +141,8 @@ document.querySelector('.b-14').onclick = t14;
 //  По нажатию кнопки .b-15 выполняется функция t15. Она присваивает .i-15 свойство style.border = "4px solid red";
 
 function t15() {
-
+    let a15 = document.querySelector('.i-15');
+    a15.style.border = "4px solid red";
 }
 
 document.querySelector('.b-15').onclick = t15;
@@ -150,7 +151,9 @@ document.querySelector('.b-15').onclick = t15;
 //По нажатию на кнопку .b-16 выполняется функция t16. Функция получает из .i-16-1 и i-16-2 числа. Выведите в .out-16 сумму данных чисел по нажатию кнопки b-16. Не переводите полученное из input в число!!!!
 
 function t16() {
-
+    let a16 = document.querySelector('.i-16-1');
+    let b16 = document.querySelector('.i-16-2');
+    document.querySelector('.out-16').innerHTML = a16.value + b16.value;
 }
 
 document.querySelector('.b-16').onclick = t16;
@@ -171,7 +174,7 @@ document.querySelector('.b-17').onclick = t17;
 //  По нажатию на кнопку .b-18 выполняется функция t18. Функция получает из .i-18 число в переменную a. Выводит в out-18 результат операции parseFloat(a). Попробуйте ввести значения 5, 33.02, 33.9a, -20.01
 
 function t18() {
-
+    document
 }
 
 document.querySelector('.b-18').onclick = t18;
