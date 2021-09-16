@@ -105,10 +105,10 @@ document.querySelector('.b-11').onclick = t11;
 // По нажатию на кнопку выполняется функция t12. Функция должна получить данные из input i.12-1 и i.12-2 (пользователь вводин в них фамилию и имя). После чего вывести в .out-12  строку 'Hello имя фамилия', где имя - имя пользователя и фамилия - введенная фамилия. Обращаю ваше внимание - с этого момента мы работаем строго по заданию. Hello - с большой буквы. Между Hello имя один пробел (вы же включили отображение пробелов?). Вы не добавляете "от себя" - запятые, любые другие слова и символы. Аналогичные правила действуют и дальше по курсу.
 
 function t12() {
-    let i121 = document.querySelector('.i12-1');
-    let i122 = document.querySelector('.i12-2');
+    let i121 = document.querySelector('.i-12-1');
+    let i122 = document.querySelector('.i-12-2');
 
-
+    document.querySelector('.out-12').innerHTML = 'Hello ' + i121.value + ' ' + i122.value;
 
 }
 
@@ -118,7 +118,11 @@ document.querySelector('.b-12').onclick = t12;
 // При нажатии кнопки .b-13 выполняется t13. Функция получает из input.i-13-1 и .i-13-2 числа в переменные a, b. После чего в .out-13 выводит их сумму. Преобразовывайте a, b в числа!!!!
 
 function t13() {
-
+    let a = document.querySelector('.i-13-1');
+    let b = document.querySelector('.i-13-2');
+    a = +a.value;
+    b = +b.value;
+    document.querySelector('.out-13').innerHTML = a + b;
 }
 
 document.querySelector('.b-13').onclick = t13;
@@ -127,6 +131,7 @@ document.querySelector('.b-13').onclick = t13;
 // По нажатию кнопки .b-14 выполняется функция t14. Она заменяет значение value в input.i-14 на строку 'Go';
 
 function t14() {
+
 
 }
 
