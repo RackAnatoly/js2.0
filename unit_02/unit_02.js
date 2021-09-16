@@ -174,7 +174,7 @@ document.querySelector('.b-17').onclick = t17;
 //  По нажатию на кнопку .b-18 выполняется функция t18. Функция получает из .i-18 число в переменную a. Выводит в out-18 результат операции parseFloat(a). Попробуйте ввести значения 5, 33.02, 33.9a, -20.01
 
 function t18() {
-    document
+    let a = document.querySelector('.i-18').value;
 }
 
 document.querySelector('.b-18').onclick = t18;
