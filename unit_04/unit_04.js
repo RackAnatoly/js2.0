@@ -2,6 +2,7 @@
 // При нажатии (click) на .b-1 запускайте f1, которая выводите в .out-1 число 1.
 
 function f1() {
+    document.querySelector('.out-1').innerHTML = 1;
 
 }
 
@@ -12,7 +13,7 @@ document.querySelector('.b-1').onclick = f1;
 // При нажатии (click) на .i-2 запускайте f2, которая выводите в .out-2 число 2. Т.е. как видите, мы можем повесить клик на любой элемент.
 
 function f2() {
-
+    document.querySelector('.out-2').innerHTML = 2; 
 }
 
 document.querySelector('.i-2').onclick = f2;
@@ -22,7 +23,7 @@ document.querySelector('.i-2').onclick = f2;
 //  При нажатии (click) на .p-3 запускайте f3, которая выводите в .out-3 число 3. Т.е. как видите, мы можем повеcить клик на любой элемент.
 
 function f3() {
-
+    document.querySelector('.out-3').innerHTML = 3; 
 }
 
 document.querySelector('.p-3').onclick = f3;
@@ -32,7 +33,14 @@ document.querySelector('.p-3').onclick = f3;
 // При клике по кнопке .b-4 запускается функция f4. Функция проверяет состояние .i-4 и если он checked - выводит true, если не выбран - false. Вывод везде в задачах, где не указано другое, осуществляется в div.out-номер задачи. В данном случае - div.out-4
 
 function f4() {
+let a4 = document.querySelector('.i-4');
+let out4 = document.querySelector('.out-4');
 
+if (a4.checked){
+out4.innerHTML = true;
+} else {
+    out4.innerHTML = false;
+}
 }
 
 document.querySelector('.b-4').onclick = f4;
@@ -41,7 +49,14 @@ document.querySelector('.b-4').onclick = f4;
 // При клике по кнопке .b-5 запускается функция f5. Функция проверяет состояние .i-5 и если он checked - выводит value данного элемента, если не выбран - false. Вывод везде в задачах, где не указано другое, осуществляется в div.out-номер задачи. В данном случае div.out-5
 
 function f5() {
+let a5 = document.querySelector('.i-5');
+let out5 = document.querySelector('.out-5');
 
+if (a5.checked){
+out5.innerHTML = a5.value;
+} else {
+    out5.innerHTML = false;
+}
 }
 
 document.querySelector('.b-5').onclick = f5;
@@ -51,7 +66,10 @@ document.querySelector('.b-5').onclick = f5;
 // При нажатии на кнопку выводите value из input.i-6 в div.out-6. Обратите внимание, что даже скрытый hidden input - нам не помеха. 
 
 function f6() {
+let a6 = document.querySelector('.i-6').value;
+let out6 = document.querySelector('.out-6');
 
+out6.innerHTML=a6;
 }
 
 document.querySelector('.b-6').onclick = f6;
@@ -60,6 +78,8 @@ document.querySelector('.b-6').onclick = f6;
 // При нажатии на кнопку выводите в div.out-71 value прописанное в input .i-7. В .out-72 выводите 1 если длина пароля больше или равна 6 или 0 если меньше. Для подсчета количества символов в строке используйте length.
 
 function f7() {
+    let a7 = document.querySelector('.i-7').value;
+    let out5 = document.querySelector('.out-5');
 
 }
 
