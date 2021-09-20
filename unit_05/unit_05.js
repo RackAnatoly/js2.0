@@ -5,7 +5,12 @@
 
 
 function t1() {
-
+    let b = '';
+    let a = document.querySelector('.out-1');
+    for (let i = 1; i < 17; i++) {
+        b += i + '_';
+    }
+    a.innerHTML = b;
 }
 
 document.querySelector('.b-1').onclick = t1;
@@ -16,7 +21,12 @@ document.querySelector('.b-1').onclick = t1;
 //Разделитель - нижнее подчеркивание. Задача решается с помощью цикла.
 
 function t2() {
-
+    let b = '';
+    let a = document.querySelector('.out-2');
+    for (let i = 12; i < 39; i = i + 2) {
+        b += i + '_';
+    }
+    a.innerHTML = b;
 }
 
 document.querySelector('.b-2').onclick = t2;
@@ -28,7 +38,12 @@ document.querySelector('.b-2').onclick = t2;
 // Разделитель - нижнее подчеркивание. Задача решается с помощью цикла.
 
 function t3() {
-
+    let b = '';
+    let a = document.querySelector('.out-3');
+    for (let i = 25; i > 6; i--) {
+        b += i + '_'
+    }
+    a.innerHTML = b;
 }
 
 document.querySelector('.b-3').onclick = t3;
@@ -40,7 +55,12 @@ document.querySelector('.b-3').onclick = t3;
 
 
 function t4() {
-
+    let b = '';
+    let a = document.querySelector('.out-4');
+    for (let i = 77; i > 34; i = i - 3) {
+        b += i + '_';
+    }
+    a.innerHTML = b;
 }
 
 document.querySelector('.b-4').onclick = t4;
@@ -52,7 +72,16 @@ document.querySelector('.b-4').onclick = t4;
 // от 1 до 17 c шагом 1. Разделитель - знак подчеркивания и звездочка (если число нечетное, и две звездочки если четное). Задача решается с помощью цикла.
 
 function t5() {
-
+    let b = '';
+    let a = document.querySelector('.out-5');
+    for (let i = 1; i < 18; i++) {
+        if (i % 2 === 0) {
+            b += i + "_** ";
+        } else {
+            b += i + "_* ";
+        }
+    }
+    a.innerHTML = b;
 }
 
 document.querySelector('.b-5').onclick = t5;
@@ -69,8 +98,17 @@ document.querySelector('.b-5').onclick = t5;
 //
 
 function t6() {
+    let d = '';
+    let a = document.querySelector('.out-6');
+    let b = document.querySelector('.i-6').value;
+    let c = '******<br>';
 
+    for (let i = 0; i < b; i++) {
+        d += c;
+    }
+    a.innerHTML = d;
 }
+
 
 document.querySelector('.b-6').onclick = t6;
 
