@@ -131,7 +131,7 @@ for(let i=a; i >= 0; i--){
 }
 c.innerHTML = b;
 }
-
+//////////////
 document.querySelector('.b-7').onclick = t7;
 
 
