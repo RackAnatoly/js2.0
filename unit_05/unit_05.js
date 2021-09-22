@@ -243,7 +243,12 @@ document.querySelector('.b-11').onclick = t11;
 
 
 function t12() {
+    let a = document.querySelectorAll('.div-12');
+    let b = '';
 
+    for (let i = 0; i < a.length; i++) {
+        a[i].style.background = 'orange';
+    }
 }
 
 document.querySelector('.b-12').onclick = t12;
