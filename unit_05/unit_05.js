@@ -118,10 +118,18 @@ document.querySelector('.b-6').onclick = t6;
 // По нажатию кнопки .b-7 должна запускаться функция t7, которая выводит в .out-7 числа от введенного пользователем до нуля включительно.
 // Разделитель - знак подчеркивания. Если пользователь ввел 4 и нажал кнопку, мы получим:
 // 4_3_2_1_0_
+
 // Задача решается с помощью цикла.
 
 function t7() {
+let a = document.querySelector('.i-7').value;
+let b = '';
+let c = document.querySelector('.out-7');
 
+for(let i=a; i > 0; i--){
+    b += i + "_";
+}
+c.innerHTML = b;
 }
 
 document.querySelector('.b-7').onclick = t7;
