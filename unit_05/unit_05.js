@@ -257,7 +257,11 @@ document.querySelector('.b-12').onclick = t12;
 // С помощью цикла присвойте всем input .i-13 value равное 1 для первого, 2 для второго и 3 для третьего.
 
 function t13() {
+    let a = document.querySelectorAll('.i-13');
 
+    for (i = 0; i < a.length; i++) {
+        a[i].value += 1;
+    }
 }
 
 document.querySelector('.b-13').onclick = t13;
@@ -270,7 +274,13 @@ document.querySelector('.b-13').onclick = t13;
 
 
 function t14() {
-
+    let a = document.querySelectorAll('.i-14');
+    let b = document.querySelector('.out-14');
+    for (let i = 0; i < a.length; i++) {
+        if (a[i].checked) {
+            b.innerHTML = a[i].value;
+        }
+    }
 }
 
 document.querySelector('.b-14').onclick = t14;
