@@ -126,7 +126,7 @@ let a = document.querySelector('.i-7').value;
 let b = '';
 let c = document.querySelector('.out-7');
 
-for(let i=a; i > 0; i--){
+for(let i=a; i >= 0; i--){
     b += i + "_";
 }
 c.innerHTML = b;
