@@ -131,7 +131,7 @@ for(let i=a; i >= 0; i--){
 }
 c.innerHTML = b;
 }
-//////////////
+
 document.querySelector('.b-7').onclick = t7;
 
 
@@ -144,8 +144,18 @@ document.querySelector('.b-7').onclick = t7;
 // Задача решается с помощью цикла.
 
 function t8() {
+let a81 = document.querySelector('.i-81').value;
+let a82 = document.querySelector('.i-82').value;
 
+let b = '';
+let c = document.querySelector('.out-8');
+
+for(let i=a81; i <= a82; i++){
+    b += i + "_";
 }
+c.innerHTML = b;
+}
+
 
 document.querySelector('.b-8').onclick = t8;
 
@@ -161,8 +171,25 @@ document.querySelector('.b-8').onclick = t8;
 // цикл - один
 
 function t9() {
+let a91 = document.querySelector('.i-91').value;
+let a92 = document.querySelector('.i-92').value;
 
+let b = '';
+let c = document.querySelector('.out-9');
+
+if(a92 > a91){
+    for(let i=a91; i <= a92; i++){
+    b += i + "_";
 }
+c.innerHTML = b;} 
+else {
+    for(let i=a92; i <= a91; i++){
+    b += i + "_";
+}
+c.innerHTML = b;
+}
+}
+
 
 document.querySelector('.b-9').onclick = t9;
 
