@@ -122,14 +122,14 @@ document.querySelector('.b-6').onclick = t6;
 // Задача решается с помощью цикла.
 
 function t7() {
-let a = document.querySelector('.i-7').value;
-let b = '';
-let c = document.querySelector('.out-7');
+    let a = document.querySelector('.i-7').value;
+    let b = '';
+    let c = document.querySelector('.out-7');
 
-for(let i=a; i >= 0; i--){
-    b += i + "_";
-}
-c.innerHTML = b;
+    for (let i = a; i >= 0; i--) {
+        b += i + "_";
+    }
+    c.innerHTML = b;
 }
 
 document.querySelector('.b-7').onclick = t7;
@@ -144,16 +144,16 @@ document.querySelector('.b-7').onclick = t7;
 // Задача решается с помощью цикла.
 
 function t8() {
-let a81 = document.querySelector('.i-81').value;
-let a82 = document.querySelector('.i-82').value;
+    let a81 = document.querySelector('.i-81').value;
+    let a82 = document.querySelector('.i-82').value;
 
-let b = '';
-let c = document.querySelector('.out-8');
+    let b = '';
+    let c = document.querySelector('.out-8');
 
-for(let i=a81; i <= a82; i++){
-    b += i + "_";
-}
-c.innerHTML = b;
+    for (let i = a81; i <= a82; i++) {
+        b += i + "_";
+    }
+    c.innerHTML = b;
 }
 
 
@@ -171,23 +171,24 @@ document.querySelector('.b-8').onclick = t8;
 // цикл - один
 
 function t9() {
-let a91 = document.querySelector('.i-91').value;
-let a92 = document.querySelector('.i-92').value;
+    let a91 = document.querySelector('.i-91').value;
+    let a92 = document.querySelector('.i-92').value;
 
-let b = '';
-let c = document.querySelector('.out-9');
+    let b = '';
+    let c = document.querySelector('.out-9');
 
-if(a92 > a91){
-    for(let i=a91; i <= a92; i++){
-    b += i + "_";
-}
-c.innerHTML = b;} 
-else {
-    for(let i=a92; i <= a91; i++){
-    b += i + "_";
-}
-c.innerHTML = b;
-}
+    if (a92 > a91) {
+        for (let i = a91; i <= a92; i++) {
+            b += i + "_";
+        }
+        c.innerHTML = b;
+    }
+    else {
+        for (let i = a92; i <= a91; i++) {
+            b += i + "_";
+        }
+        c.innerHTML = b;
+    }
 }
 
 
@@ -197,10 +198,17 @@ document.querySelector('.b-9').onclick = t9;
 //  Task 10
 // Кнопка .b-10 запускает функцию t10. Функция должна выводить в .out-10 четные годы от 1950 до 1970 включительно.
 // Разделитель - знак подчеркивания. Задача решается через цикл, а четность - через шаг (равный 2).
-
+// 
 function t10() {
+    let a = document.querySelector('.out-10');
+    let b = '';
 
+    for (let i = 1950; i <= 1970; i = i + 2) {
+        b += i + '_';
+    }
+    a.innerHTML = b;
 }
+
 
 document.querySelector('.b-10').onclick = t10;
 
@@ -214,7 +222,15 @@ document.querySelector('.b-10').onclick = t10;
 
 
 function t11() {
+    let divs11 = document.querySelectorAll('.div-11');
+    let b = document.querySelector('.out-11');
+    let c = '';
 
+    for (let i = 0; i < divs11.length; i++) {
+
+        c += divs11[i].innerHTML + '_';
+    }
+    b.innerHTML = c;
 }
 
 document.querySelector('.b-11').onclick = t11;
