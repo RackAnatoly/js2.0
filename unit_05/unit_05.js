@@ -291,7 +291,13 @@ document.querySelector('.b-14').onclick = t14;
 // Подсказка (10 - i) + '_' + i + '_'
 
 function t15() {
+    let a = document.querySelector('.out-15');
+    let b = '';
 
+    for (i = 0; i <= 10; i++) {
+        b += (10 - i) + '_' + i + '_'
+    }
+    a.innerHTML = b;
 }
 
 document.querySelector('.b-15').onclick = t15;
