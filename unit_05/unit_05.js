@@ -260,7 +260,7 @@ function t13() {
     let a = document.querySelectorAll('.i-13');
 
     for (i = 0; i < a.length; i++) {
-        a[i].value += 1;
+        a[i].value = i;
     }
 }
 
