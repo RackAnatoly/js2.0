@@ -153,11 +153,11 @@ document.querySelector('.b-6').onclick = t6;
 function t7() {
     let a = document.querySelector('.out-7');
     let b = '';
-    for (let i = 1; i < 4; i++) {
-        b += i + '_';
-        for (let k = 1; k < 6; k++) {
-            b += k + '*';
+    for (let i = 0; i < 4; i++) {
+        for (let k = 0; k <= i; k++) {
+            b += '*';
         }
+        b += '<br>';
     }
     a.innerHTML = b;
 }
@@ -176,7 +176,15 @@ document.querySelector('.b-7').onclick = t7;
 // *
 
 function t8() {
-
+    let a = document.querySelector('.out-8');
+    let b = '';
+    for (let i = 4; i < 4; i++) {
+        for (let k = 4; k <= i; k++) {
+            b += '*';
+        }
+        b += '<br>';
+    }
+    a.innerHTML = b;
 }
 
 document.querySelector('.b-8').onclick = t8;
