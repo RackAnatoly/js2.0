@@ -10,7 +10,7 @@ function t1() {
     let b = '';
     for (let i = 1; i < 4; i++) {
         for (let k = 1; k < 4; k++) {
-            b += '* ';
+            b += '*';
         }
         b += '_';
     }
