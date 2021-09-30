@@ -76,9 +76,9 @@ function t5() {
     let a = document.querySelector('.out-5');
     for (let i = 1; i < 18; i++) {
         if (i % 2 === 0) {
-            b += i + "_** ";
+            b += i + "_**";
         } else {
-            b += i + "_* ";
+            b += i + "_*";
         }
     }
     a.innerHTML = b;
