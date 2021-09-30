@@ -93,11 +93,14 @@ function t7() {
     // у вас есть функция t6, которая может генерировать случайные целые числа в нужном диапазоне. 
     // давайте воспользуемся ней. Просто запустим ее три раза внутри строки ниже
     //return `rgb(${t6(0,255)}....допишите сами
-    return `rgb(${Math.random()*256<<0}, ${Math.random()*256<<0}, ${Math.random()*256<<0})`;
+   
 
+ return `rgb(${t6(0, 255)}, ${t6(0, 255)}, ${t6(0, 255)})`
+ }
     document.querySelector('.b-7').onclick = function () {
     document.querySelector('.out-7').style.background = t7();
 }
+
 
 
 // Task 8
