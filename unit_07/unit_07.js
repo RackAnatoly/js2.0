@@ -112,10 +112,8 @@ function t8(str) {
 
 document.querySelector('.b-8').onclick = function () {
     let s = "            Hello                ";
-    console.log(t8(s)); 
+    console.log(t8(s));
 }
-
-ыв
 
 
 // Task 9
