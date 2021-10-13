@@ -233,15 +233,7 @@ document.querySelector('.b-10').onclick = t10;
 //     В результате должно получиться так:
 //     one_3_4_two_
 
-// let divs11 = document.querySelectorAll('.div-11');
-//     let b = document.querySelector('.out-11');
-//     let c = '';
 
-//  for (let i = 0; i < divs11.length; i++) {
-
-//         c += divs11[i].innerHTML + '_';
-//     }
-//     b.innerHTML = c;
 
 function t11() {
     let b = document.querySelectorAll('.div-11');
