@@ -257,8 +257,16 @@ document.querySelector('.b-11').onclick = t11;
 // применить к каждому elem[i].style.background = 'orange'
 
 
-function t12() {
 
+function t12() {
+    let b = document.querySelectorAll('.div-12');
+    let c = '';
+    let k = 0;
+
+    while (k < b.length) {
+        b[k].style.background = 'orange';
+        k++;
+    }
 }
 
 document.querySelector('.b-12').onclick = t12;
@@ -269,8 +277,16 @@ document.querySelector('.b-12').onclick = t12;
 // перебрать их с помощью цикла  while. Обращение к элементу выглядит так elem[i]
 // применить к каждому elem[i].value, причем к value первого должно равняться 1, второго - 2, третьего - 3...
 
-function t13() {
 
+
+function t13() {
+    let a = document.querySelectorAll('.i-13');
+    let k = 0;
+
+    while (k < a.length) {
+        a[k].value = k + 1;
+        k++;
+    }
 }
 
 document.querySelector('.b-13').onclick = t13;
@@ -283,7 +299,16 @@ document.querySelector('.b-13').onclick = t13;
 
 
 function t14() {
+    let a = document.querySelectorAll('.i-14');
+    let k = 0;
+    let c = document.querySelector('.out-14');
 
+    while (k < a.length) {
+        if (a[k].checked) {
+            c.innerHTML = a[k].value;
+        }
+        k++;
+    }
 }
 
 document.querySelector('.b-14').onclick = t14;
@@ -294,7 +319,25 @@ document.querySelector('.b-14').onclick = t14;
 // Для вывода использовать цикл  while. Разделитель подчеркивание.
 
 function t15() {
+    let a = document.querySelector('.out-15');
 
+    let c = '';
+    let x = 0;
+    while (x < 3) {
+        let k = 77;
+        while (k < 100) {
+
+            c += k + "_";
+            k = k + 11;
+        }
+        x++;
+
+    }
+    a.innerHTML = c;
 }
+
+document.querySelector('.b-15').onclick = t15;
+
+
 
 document.querySelector('.b-15').onclick = t15;

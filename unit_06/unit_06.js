@@ -74,7 +74,7 @@ function t4() {
     let a = document.querySelector('.out-4');
     let b = '';
     for (let i = 1; i < 4; i++) {
-        b += i + '_';
+        
         for (let k = 1; k < 6; k++) {
             b += k + '*';
         }
@@ -178,7 +178,7 @@ document.querySelector('.b-7').onclick = t7;
 function t8() {
     let a = document.querySelector('.out-8');
     let b = '';
-    for (let i = 4; i >=0; i--) {
+    for (let i = 4; i >= 0; i--) {
         // b += i + '<br>';
         for (let k = 0; k <= i; k++) {
             b += '*';
@@ -201,11 +201,11 @@ document.querySelector('.b-8').onclick = t8;
 // 1_2_3_4_5_
 
 function t9() {
-let a = document.querySelector('.out-9');
+    let a = document.querySelector('.out-9');
     let b = '';
     for (let i = 1; i < 6; i++) {
         for (let k = 1; k <= i; k++) {
-            b += k+'_';
+            b += k + '_';
         }
         b += '<br>';
     }
@@ -226,19 +226,19 @@ document.querySelector('.b-9').onclick = t9;
 
 
 function t10() {
-let a = document.querySelector('.out-10');
- let result = "";
-for (i = 0; i < 5; i++) {
-for (k = 1; k <= 10; k++) {
-if (k == 10) {
-result += `${i + 1}0_`;
-} else {
-result += `${i}${k}_`;
-}
-}
-result += "<br>";
-}
-a.innerHTML = result;
+    let a = document.querySelector('.out-10');
+    let result = "";
+    for (i = 0; i < 5; i++) {
+        for (k = 1; k <= 10; k++) {
+            if (k == 10) {
+                result += `${i + 1}0_`;
+            } else {
+                result += `${i}${k}_`;
+            }
+        }
+        result += "<br>";
+    }
+    a.innerHTML = result;
 }
 
 document.querySelector('.b-10').onclick = t10;
