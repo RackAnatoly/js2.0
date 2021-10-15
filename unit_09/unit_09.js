@@ -3,7 +3,9 @@
 
 
 function f1() {
-
+    let a = document.querySelector('.out-1');
+    a.style.width = '200px';
+    a.style.height = '90px';
 }
 
 document.querySelector('.b-1').onclick = f1;
@@ -12,7 +14,8 @@ document.querySelector('.b-1').onclick = f1;
 // По нажатию на кнопку .b-2 функция f2, которая присваивает блоку .out-2 класс .bg-orange.
 
 function f2() {
-
+    let a = document.querySelector('.out-2');
+    a.classList.add('bg-orange');
 }
 
 document.querySelector('.b-2').onclick = f2;
@@ -22,7 +25,8 @@ document.querySelector('.b-2').onclick = f2;
 // По нажатию кнопки .b-3 запускайте функцию f3, которая удаляет у блока .out-3 класс .bg-orange.
 
 function f3() {
-
+    let a = document.querySelector('.out-3');
+    a.classList.remove('bg-orange');
 }
 
 document.querySelector('.b-3').onclick = f3;
@@ -32,6 +36,8 @@ document.querySelector('.b-3').onclick = f3;
 
 
 function f4() {
+    let a = document.querySelector('.out-4');
+    a.classList.toggle('bg-orange');
 
 }
 
@@ -42,7 +48,14 @@ document.querySelector('.b-4').onclick = f4;
 // По нажатию .b-5 запускайте функцию f5, которая проверяет наличие класса .bg-orange у блока .out-4 (да, именно у out-4 ). Результат - true или false, выводите в .out-5.
 
 function f5() {
+    let a = document.querySelector('.out-5');
+    let b = document.querySelector('.out-4');
 
+    if (b.classList.contains('bg-orange')) {
+        a.innerHTML = true;
+    } else {
+        a.innerHTML = false;
+    }
 }
 
 document.querySelector('.b-5').onclick = f5;
@@ -52,7 +65,8 @@ document.querySelector('.b-5').onclick = f5;
 // По нажатию .b-6 запускайте функцию f6, которая выводит в .out-6 количество параграфов с классом .p-6.
 
 function f6() {
-
+    let a = document.querySelector('.out-6');
+    a.innerHTML = document.getElementsByClassName('p-6').length;
 }
 
 document.querySelector('.b-6').onclick = f6;
@@ -65,6 +79,10 @@ let blocks7 = document.querySelectorAll('.out-7');
 
 function f7() {
     //внутри цикла blocks7[i].classList....
+    for (i = 0; i < blocks7.length; i++) {
+        blocks7[i].classList.add('bg-orange');
+        i++;
+    }
 }
 
 document.querySelector('.b-7').onclick = f7;
