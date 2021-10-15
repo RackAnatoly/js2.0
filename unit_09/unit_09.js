@@ -81,7 +81,6 @@ function f7() {
     //внутри цикла blocks7[i].classList....
     for (i = 0; i < blocks7.length; i++) {
         blocks7[i].classList.add('bg-orange');
-        i++;
     }
 }
 
