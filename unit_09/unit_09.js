@@ -94,6 +94,9 @@ let blocks8 = document.querySelectorAll('.out-8');
 
 function f8() {
     //внутри цикла blocks8[i].classList....
+    for (i = 0; i < blocks8.length; i++) {
+        blocks8[i].classList.toggle('bg-orange');
+    }
 }
 
 document.querySelector('.b-8').onclick = f8;
@@ -104,6 +107,7 @@ document.querySelector('.b-8').onclick = f8;
 
 function f9() {
     //this.classList...  // все решается одной строкой
+    this.classList.add('bg-orange');
 }
 
 let div9 = document.querySelectorAll('.out-9');
@@ -113,18 +117,21 @@ for (let i = 0; i < div9.length; i++) {
 }
 
 
+
 //  Task 10
 // Усложним предыдущие задачи. С помощью цикла повим на блоки .out-10 событие клик. По клику должна выполняться функция f10. Функция, должна делать toggle класса .bg-orange тому .out-10 на котором кликнули.
 
 //let div10 = тут получите все out-10
+let div10 = document.querySelectorAll('.out-10');
 
 function f10() {
-
+    this.classList.toggle('bg-orange');
 }
 
 // а тут цикл, похожий на предыдущее задание
-
-
+for (let i = 0; i < div10.length; i++) {
+    div10[i].onclick = f10;
+}
 
 //  Task 11
 // Кнопка .b-11, запускает функцию f11. Функция создает через createElement div c текстом 25 и добавляет его через append в .out-11.
