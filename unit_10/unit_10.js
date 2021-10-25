@@ -377,9 +377,9 @@ let ar20 = [4, 5, 6, 7, 8, 9, 10];
 function f20() {
     let a = 0;
     for (i = 0; i < ar20.length; i++) {
-        
-
+        a = ar20[i] + a;
     }
+    document.querySelector('.out-20').innerHTML = a;
 
 }
 
