@@ -262,7 +262,14 @@ document.querySelector('.b-14').onclick = f14;
 let ar15 = [0, 2, 5, -4, 6, 22, -9, -12, 8, 12, 13, 78];
 
 function f15() {
+    let d = '';
 
+    for (i = 0; i < ar15.length; i++) {
+        if (ar15[i] > 0) {
+            d += ar15[i] + ' ';
+        }
+    }
+    document.querySelector('.out-15').innerHTML = d;
 }
 
 document.querySelector('.b-15').onclick = f15;
