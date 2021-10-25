@@ -285,6 +285,18 @@ let ar16_odd = [];
 let ar16_even = [];
 
 function f16() {
+    let a = document.querySelector('.out-16-odd');
+    let b = document.querySelector('.out-16-even');
+
+    for (i = 0; i < ar16.length; i++) {
+        if (ar16[i] % 2 == 0) {
+            ar16_even += ar16[i] + ' ';
+        } else {
+            ar16_odd += ar16[i] + ' ';
+        }
+        b.innerHTML = ar16_even;
+        a.innerHTML = ar16_odd;
+    }
 
 }
 
