@@ -243,7 +243,12 @@ document.querySelector('.b-13').onclick = f13;
 let ar14 = [1, 2, 3, 'hello', 66];
 
 function f14() {
+    let d = '';
 
+    for (i = ar14.length - 1; i >= 0; i--) {
+        d += ar14[i] + ' ';
+    }
+    document.querySelector('.out-14').innerHTML = d;
 }
 
 document.querySelector('.b-14').onclick = f14;
