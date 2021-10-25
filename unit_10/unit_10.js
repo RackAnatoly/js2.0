@@ -74,10 +74,15 @@ document.querySelector('.b-5').onclick = f5;
 // Вывод - по нажатию кнопки b-6
 // Вывод в out-6
 
+
 let ar6 = ['Анатолий', 'Рак', 20, 07];
 
 function f6() {
-    document.querySelector('.out-6').innerHTML = ar6[0] + ' ' + ar6[01] + ' ' + ar6[2] + ' ' + ar6[3];
+    let out = '';
+    for (let i = 0; i < ar6.length; i++) {
+        out += ar6[i] + ' ';
+    }
+    document.querySelector('.out-6').innerHTML = out;
 }
 
 document.querySelector('.b-6').onclick = f6;
