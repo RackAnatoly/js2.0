@@ -152,6 +152,7 @@ document.querySelector('.b-9').onclick = f9;
 let ar10 = [100, 200, 300, 400, 700, 121];
 
 function f10() {
+    document.querySelector('.out-10').innerHTML = ar10[1] + ar10[ar10.length - 1];
 }
 
 document.querySelector('.b-10').onclick = f10;
