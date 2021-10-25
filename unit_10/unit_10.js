@@ -311,6 +311,13 @@ document.querySelector('.b-16').onclick = f16;
 let ar17 = [3, 0, 2, 6, 0, 1, 3, 1, 9, 0, 2, 0];
 
 function f17() {
+    let a = 0;
+    for (i = 0; i < ar17.length; i++) {
+        if (ar17[i] > 3) {
+            a += 1;
+        }
+    }
+    document.querySelector('.out-17').innerHTML = a;
 
 }
 
