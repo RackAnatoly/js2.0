@@ -194,7 +194,19 @@ let ar12 = ['test', 'west', 'list', 'class', 'best'];
 
 function f12() {
 
+    let a = ar12[0];
+    ar12[0] = ar12[ar12.length - 1];
+    ar12[ar12.length - 1] = a;
+
+    let d = '';
+
+    for (i = 0; i < ar12.length; i++) {
+        d += ar12[i] + ' ';
+    }
+    document.querySelector('.out-12').innerHTML = d;
+
 }
+
 
 document.querySelector('.b-12').onclick = f12;
 
