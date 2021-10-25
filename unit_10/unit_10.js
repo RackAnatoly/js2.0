@@ -30,9 +30,10 @@ document.querySelector('.b-2').onclick = f2;
 // Вывод в out-3
 // Тест допустим массив [1,2,3] вывод - 3
 
-// let ar3 =  // переменную обьявляем здесь!!!!
+let ar3 = [1, 2, 3, 4, 5, 6, 7, 5, 6, 7,]  // переменную обьявляем здесь!!!!
 
 function f3() {
+    document.querySelector('.out-3').innerHTML = ar3.length;
 }
 
 document.querySelector('.b-3').onclick = f3;
