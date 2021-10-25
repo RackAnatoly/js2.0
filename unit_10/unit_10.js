@@ -91,6 +91,15 @@ document.querySelector('.b-6').onclick = f6;
 let ar7 = ['china', 'india', 'brazil', 'japan', 'egypt'];
 
 function f7() {
+    let c = document.querySelector('.out-7');
+    ar7.push('italy');
+    ar7.push('turkey');
+    ar7.push('vietnam');
+
+    for (i = 0; i < ar7.length; i++) {
+        c.innerHTML += ar7[i] + ' ';
+    }
+
 }
 
 document.querySelector('.b-7').onclick = f7;
