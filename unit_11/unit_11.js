@@ -235,10 +235,17 @@ document.querySelector('.b-14').onclick = f14;
 // Вывод - по нажатию кнопки b-15
 // Вывод в out-15
 
+
 let d15 = [0, 2, 5, -4, 6, 22, -9, -12, 8, 12, 13, 78];
 
 function f15() {
-
+    let a = +document.querySelector('.i-15').value;
+    for (i = 0; i < d15.length; i++) {
+        if (a !== d15[i]) {
+            d15.push(a);
+            break;
+        }
+    }
 
     showArr('.out-15', d15);
 }
@@ -256,7 +263,7 @@ let d161 = [5, 6, 7, 8, 9];
 let d162 = [23, 24, 56, 87];
 
 function f16() {
-
+    d16 = d161.concat(d162);
     showArr('.out-16', d16);
 }
 
@@ -273,7 +280,9 @@ let d171 = ['a', 'b', 'c', 'd'];
 let d172 = [1, 2, 3, 4, 5];
 
 function f17() {
-
+    for (i = 0; i < d172.length; i++) {
+        d17 = push(d171[i])
+    }
     showArr('.out-17', d17);
 }
 
@@ -289,7 +298,16 @@ document.querySelector('.b-17').onclick = f17;
 let d18 = ['b', 'c', '45', 'e', 'z', 'y'];
 
 function f18() {
+    let a = document.querySelector('.i-18').value;
+    let b = document.querySelector('.out-18');
 
+    for (i = 0; i < d18.length; i++) {
+        if (d18.includes(a)) {
+            b.innerHTML = true;
+        } else {
+            b.innerHTML = false;
+        }
+    }
 }
 
 document.querySelector('.b-18').onclick = f18;
