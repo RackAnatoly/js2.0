@@ -159,7 +159,7 @@ function f11() {
     let b = document.querySelector('.i-11').value;
     let a = Number(b);
     document.querySelector('.out-11').innerHTML = d11.indexOf(a);
-    
+
 }
 
 document.querySelector('.b-11').onclick = f11;
@@ -171,10 +171,21 @@ document.querySelector('.b-11').onclick = f11;
 // Вывод - по нажатию кнопки b-12
 // Вывод в out-12
 
+
+
 let d12 = [6, 62, 60, 70, 1, 5];
 
 function f12() {
-
+    let b = +document.querySelector('.i-12').value;
+    let res = -1;
+    for (i = 0; i < d12.length; i++) {
+        if (b === d12[i]) {
+            document.querySelector('.out-12').innerHTML = i;
+            break;
+        } else {
+            document.querySelector('.out-12').innerHTML = res;
+        }
+    }
 }
 
 document.querySelector('.b-12').onclick = f12;
