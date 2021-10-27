@@ -125,7 +125,7 @@ document.querySelector('.b-8').onclick = f8;
 let d9 = [100, 200, 300, 400, 700, 121];
 
 function f9() {
-
+    d9[0] = '';
     showArr('.out-9', d9);
 }
 
