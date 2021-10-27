@@ -109,7 +109,8 @@ document.querySelector('.b-7').onclick = f7;
 let d8 = [2, '4', 12, 67, 'hello'];
 
 function f8() {
-
+    let a = document.querySelector('.i-8').value;
+    d8 = a + d8;
     showArr('.out-8', d8);
 }
 
