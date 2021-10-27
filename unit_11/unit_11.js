@@ -240,11 +240,10 @@ let d15 = [0, 2, 5, -4, 6, 22, -9, -12, 8, 12, 13, 78];
 
 function f15() {
     let a = +document.querySelector('.i-15').value;
-    for (i = 0; i < d15.length; i++) {
-        if (a !== d15[i]) {
-            d15.push(a);
-            break;
-        }
+    let b = d15.indexOf(a);
+    // for (i = 0; i < d15.length; i++) {
+    if (b == -1) {
+        d15.push(a);
     }
 
     showArr('.out-15', d15);
