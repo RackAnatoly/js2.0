@@ -15,6 +15,8 @@ function f1() {
     /**
      * ваш код здесь
      */
+    let a = document.querySelector('.i-1').value;
+    d1.push(a);
     showArr('.out-1', d1);
 }
 
