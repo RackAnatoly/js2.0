@@ -209,7 +209,15 @@ function f12() {
         [0, 1, 0, 1, 0, 1, 0, 1],
         [1, 0, 1, 0, 1, 0, 1, 0],
     ];
+    let a = '';
+    for (i = 0; i < a12.length; i++) {
+        for (k = 0; k < a12[i].length; k++) {
+            if (a12[i][k] === 1) a += a12[i][k] + ' ';
+        }
+    }
+    document.querySelector('.out-12').innerHTML = a;
 }
+
 
 document.querySelector('.b-12').onclick = f12;
 
