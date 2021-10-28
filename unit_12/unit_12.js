@@ -282,7 +282,13 @@ let a15 = [
 ];
 
 function f15() {
-
+let a = 0;
+    for (i = 0; i < a15.length; i++) {
+        if (a15[i].length > a) {
+            a = a15[i].length
+        }
+    }
+    document.querySelector('.out-15').innerHTML = a;
 }
 
 document.querySelector('.b-15').onclick = f15;
