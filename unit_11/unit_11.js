@@ -109,8 +109,13 @@ document.querySelector('.b-7').onclick = f7;
 let d8 = [2, '4', 12, 67, 'hello'];
 
 function f8() {
+    b = [];
     let a = document.querySelector('.i-8').value;
-    d8 = a + d8;
+    d8[0] = a;
+    for (i = 0; i < d8.length; i++) {
+        b.push(d8[i]);
+    }
+    d8 = b;
     showArr('.out-8', d8);
 }
 
@@ -125,7 +130,11 @@ document.querySelector('.b-8').onclick = f8;
 let d9 = [100, 200, 300, 400, 700, 121];
 
 function f9() {
-    d9[0] = '';
+    let a = [];
+    for (i = 1; i < d9.length; i++) {
+        a.push(d9[i]);
+    }
+    d9 = a;
     showArr('.out-9', d9);
 }
 
@@ -345,8 +354,8 @@ document.querySelector('.b-19').onclick = f19;
 let d20 = [4, 5, 6, 7, 8, 9, 10];
 
 function f20() {
-    d20.join('');
-    document.querySelector('.out-20').innerHTML = d20;
+    let a = d20.join('');
+    document.querySelector('.out-20').innerHTML = a;
 }
 
 document.querySelector('.b-20').onclick = f20;
