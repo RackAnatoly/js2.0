@@ -260,7 +260,11 @@ let a14 = [
 ];
          
 function f14() {
-
+let a = '';
+    for (i = 0; i < a14.length; i++) {
+        a += a14[i].length + ' ';
+    }
+    document.querySelector('.out-14').innerHTML = a;
 }
 
 document.querySelector('.b-14').onclick = f14;
