@@ -229,7 +229,7 @@ let a13 = [];
 function f13() {
 
 }
-
+   
 document.querySelector('.b-13').onclick = f13;
 
 // Task 14
