@@ -227,11 +227,26 @@ document.querySelector('.b-12').onclick = f12;
 let a13 = [];
 
 function f13() {
-    
-}
-               
-document.querySelector('.b-13').onclick = f13;
+    let p = 0;
+    for (let i = 0; i < 8; i++) {
+        let t = [];
+        for (let k = 0; k < 8; k++) {
+            if (p % 2 === 0) {
+                t.push(1);
+            }
+            else {
+                t.push(0);
+            }
+            p++;
+        }
 
+        a13.push(t);
+        p++;
+    }
+    console.log(a13);
+}
+
+document.querySelector('.b-13').onclick = f13;
 // Task 14
 // При нажатии b-14 выполняете функцию f14. Функция должна вывести в out-14 длины вложенных в a14 массивов. Через пробел.
 // т.е ожидаем 0 2 4 ...
