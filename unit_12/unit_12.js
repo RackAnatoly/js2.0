@@ -227,9 +227,9 @@ document.querySelector('.b-12').onclick = f12;
 let a13 = [];
 
 function f13() {
-
+    
 }
-   
+               
 document.querySelector('.b-13').onclick = f13;
 
 // Task 14
@@ -243,7 +243,7 @@ let a14 = [
     [3, 4, 5, 6, 7, 8],
     [1, 2]
 ];
-
+         
 function f14() {
 
 }
