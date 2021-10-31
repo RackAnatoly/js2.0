@@ -119,7 +119,11 @@ let a6 = {
 };
 
 function f6() {
+let a = document.querySelector('.i-61').value;
+    let b = document.querySelector('.i-62').value;
 
+    a6[a] = b;
+    f5(a6, '.out-6');
 }
 
 document.querySelector('.b-6').onclick = f6;
