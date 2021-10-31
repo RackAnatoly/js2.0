@@ -71,8 +71,11 @@ let a4 = {
     "mix": "mix"
 };
 function f4() {
-
-    // return out;
+let a = '';
+    for (let key in a4) {
+        a += key + ' ' + a4[key] + '<br>';
+    }
+    return a;
 }
 
 document.querySelector('.b-4').onclick = () => {
@@ -84,11 +87,16 @@ document.querySelector('.b-4').onclick = () => {
 
 
 function f5(arr, block) {
-    let out = '';
+    // let out = '';
     // цикл
+    let a = '';
+    for (let key in arr) {
+        a += `${key} : ${arr[key]} <br>`;
+    }
     // формат вывода `${key} : ${arr[key]} <br>`;
     //
     // тут вывод в блок block
+    document.querySelector(block).innerHTML = a;
 }
 
 // давайте протестируем f5
