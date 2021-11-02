@@ -205,7 +205,17 @@ document.querySelector('.b-9').onclick = f9;
 // Давайте напишем полезную функцию f10, которая проверяет есть ли значение в ассоциативном массиве. Фукнция должна возвращать true если есть, и false если нет. Массив и значение передавать функции в качестве параметров.
 
 function f10(arr, val) {
+let c = false;
+    for (let key in arr) {
+        if (val === arr[key]) {
+            return (c = true)
+        } else {
+            return c
+        }
 
+        //return true;
+        //return false;
+    }
     //return true;
     //return false;
 }
