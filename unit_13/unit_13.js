@@ -459,7 +459,17 @@ let a20 = {
 }
 
 function f20() {
-
+let a = '';
+    for (let key in a20) {
+        for (i = 0; i < a20[key].length; i++) {
+            for (k = 0; k < a20[key][i].length; k++) {
+                if (a20[key][i][k] === 2) {
+                    a += a20[key][i][0] + ' ';
+                }
+            }
+        }
+    }
+    document.querySelector('.out-20').innerHTML = a;
 }
 
 document.querySelector('.b-20').onclick = f20
