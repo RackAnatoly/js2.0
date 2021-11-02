@@ -314,6 +314,11 @@ let a14 = {
 };
 
 function f14() {
+    let a = '';
+    for (let key in a14) {
+        a += a14[key][0] + ' ';
+    }
+    document.querySelector('.out-14').innerHTML = a;
 
 }
 
