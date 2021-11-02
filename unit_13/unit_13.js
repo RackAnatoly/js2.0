@@ -242,6 +242,13 @@ let a11 = {
 };
 
 function f11() {
+    let i11 = document.querySelector('.i-11').value;
+    for (let key in a11) {
+        if (i11 === key) {
+            delete a11[key];
+        }
+    }
+    f5(a11, '.out-11');
 }
 
 document.querySelector('.b-11').onclick = f11;
