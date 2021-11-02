@@ -159,7 +159,15 @@ let a8 = {
 };
 
 function f8() {
-
+let a = document.querySelector('.i-8').value;
+    for (let key in a8) {
+        if (a === key) {
+            document.querySelector('.out-8').innerHTML = a8[key];
+            break
+        } else {
+            document.querySelector('.out-8').innerHTML = 0;
+        }
+    }
 }
 
 document.querySelector('.b-8').onclick = f8;
