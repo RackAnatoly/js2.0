@@ -265,6 +265,13 @@ let a12 = {
 };
 
 function f12() {
+    let i12 = +document.querySelector('.i-12').value;
+    for (let key in a12) {
+        if (i12 === a12[key]) {
+            delete a12[key];
+        }
+    }
+    f5(a12, '.out-12');
 
 }
 
