@@ -184,7 +184,19 @@ let a9 = {
 };
 
 function f9() {
+let a = +document.querySelector('.i-9').value;
+    let b = '';
+    for (let key in a9) {
+        if (a === a9[key]) {
+            // document.querySelector('.out-9').innerHTML = key;
+            b += key + ' ';
 
+        }
+        //  else {
+        //     document.querySelector('.out-9').innerHTML = 0;
+        // }
+    }
+    document.querySelector('.out-9').innerHTML = b;
 }
 
 document.querySelector('.b-9').onclick = f9;
