@@ -411,6 +411,15 @@ let a18 = {
 }
 
 function f18() {
+    let a = '';
+    let i18 = document.querySelector('.i-18').value;
+
+    if (a18[i18]) {
+        for (let i = 0; i < a18[i18].length; i++) {
+            a += a18[i18][i] + ' ';
+        }
+    }
+    document.querySelector('.out-18').innerHTML = a;
 
 }
 
