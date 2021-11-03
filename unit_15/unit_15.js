@@ -72,7 +72,10 @@ document.querySelector('.b-5').onclick = f5;
 
 let a6 = [1, 2, 3, 4, 5, 3, 4, 5, 2, 4, 5, 3, 24, 5, 2, 4, 56, 4, 3, 2, 335, 2, 23, 41, 3, 4, 1, 1, 4, 2, 2, 4, 5, 24, 5, 3, 22, 56];
 
-const f6 = () => { }
+const f6 = () => { 
+let s6 = new Set(a6);
+    document.querySelector('.out-6').innerHTML = s6.size;
+}
 
 document.querySelector('.b-6').onclick = f6;
 
