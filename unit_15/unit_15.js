@@ -44,7 +44,14 @@ document.querySelector('.b-3').onclick = f3;
 
 let s4 = new Set(['a', 'b', 'c', 'z']);
 
-const f4 = () => { }
+const f4 = () => {
+let a = document.querySelector('.i-4').value;
+    if (s4.has(a)) {
+        console.log(true);
+    } else {
+        console.log(false);
+    }
+}
 
 document.querySelector('.b-4').onclick = f4;
 
