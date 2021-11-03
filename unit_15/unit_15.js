@@ -82,7 +82,17 @@ document.querySelector('.b-6').onclick = f6;
 // Task 7
 // При нажатии b-7 выполняете функцию f7. Функция должна получать из i-7 значение пароля и проверять, чтобы пользователь в строке пароля использовал не повторяющиеся символы. Если символы уникальны, а длина пароля больше ( строго) 6 то выводите в out-7 число 1. Если есть повторяющиеся символы, или длина меньше или равна 6 - то выводите 0. Для проверки уникальности символов используйте Set.
 
-const f7 = () => { }
+const f7 = () => { 
+let i7 = document.querySelector('.i-7').value;
+    let s7 = new Set(i7);
+    console.log(s7);
+    // s7.add(i7);
+    if (i7.length === s7.size && s7.size > 6) {
+        document.querySelector('.out-7').innerHTML = 1;
+    } else {
+        document.querySelector('.out-7').innerHTML = 0;
+    }
+}
 
 document.querySelector('.b-7').onclick = f7;
 
