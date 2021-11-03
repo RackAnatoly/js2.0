@@ -61,7 +61,9 @@ document.querySelector('.b-4').onclick = f4;
 
 let s5 = new Set(['a', 'b', 'c', 'z', 'a2', 'b2', 'c2', 'z2']);
 
-const f5 = () => { }
+const f5 = () => { 
+document.querySelector('.out-5').innerHTML = s5.size;
+}
 
 document.querySelector('.b-5').onclick = f5;
 
