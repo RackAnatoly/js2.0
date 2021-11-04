@@ -45,7 +45,10 @@ document.querySelector('.b-3').addEventListener('click', f3);
 //При нажатии .b-4 выполняете функцию f4. Функция получает div.out-4 со страницы с помощью querySelectorAll и в каждый дописывает число 4.
 
 function f4() {
-
+let a = document.querySelectorAll('.out-4');
+    for (let i = 0; i < a.length; i++) {
+        a[i].innerHTML += 4;
+    }
 }
 
 document.querySelector('.b-4').addEventListener('click', f4);
