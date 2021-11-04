@@ -59,7 +59,13 @@ document.querySelector('.b-4').addEventListener('click', f4);
 let a5 = [3, 4, 5, 2, 1, 7, 8, 2, 4, 6, 8, 11, 23, 17];
 
 function f5() {
-
+let a = [];
+    for (let item of a5) {
+        if (item > 7) {
+            a += item + ' ';
+        }
+    }
+    return a
 }
 
 document.querySelector('.b-5').addEventListener('click', () => {
