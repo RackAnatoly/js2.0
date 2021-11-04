@@ -78,7 +78,15 @@ document.querySelector('.b-5').addEventListener('click', () => {
 let a6 = [[1, 2], [3, 4], [5, 6]];
 
 function f6() {
-
+  let a = [];
+    for (let i = 0; i < a6.length; i++) {
+        for (k = 0; k < a6[i].length; k++) {
+            a += a6[i][k] + ' ';
+        }
+    }
+    // return a;
+    document.querySelector('.out-6').innerHTML = a;
+}
 }
 
 document.querySelector('.b-6').addEventListener('click', f6);
