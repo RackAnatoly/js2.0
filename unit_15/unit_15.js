@@ -187,8 +187,17 @@ let str13 = 'The name conjures up visions of plum pudding and Christmas punch qu
 
 
 const f13 = () => {
+let o = {};
+    let s = new Set(str13);
 
-    // return
+    for (let item of s) {
+        let a = 0;
+        for (let i = 0; i < str13.length; i++) {
+            if (item === str13[i]) a++;
+        }
+        o[item] = a;
+    }
+    return o;
 }
 
 document.querySelector('.b-13').onclick = () => {
