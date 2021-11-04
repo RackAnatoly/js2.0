@@ -32,7 +32,10 @@ document.querySelector('.b-2').addEventListener('click', f2);
 //При нажатии .b-3 выполняете функцию f3. Функция получает div.out-3 со страницы с помощью getElementsByClassName и в каждый записывает число 3, перезаписывая содержимое div.
 
 function f3() {
-
+let a = document.getElementsByClassName('out-3');
+    for (let i = 0; i < a.length; i++) {
+        a[i].textContent = 3;
+    }
 }
 
 document.querySelector('.b-3').addEventListener('click', f3);
