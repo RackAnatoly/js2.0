@@ -134,7 +134,13 @@ document.querySelector('.b-8').addEventListener('click', () => {
 let a9 = [[4, 3, 2], [2, 5], [0, 0, 0, 0, 0]];
 
 function f9() {
-
+let a = 0;
+    for (let i = 0; i < a9.length; i++) {
+        if (a9[i].length > a) {
+            a = a9[i].length - 1;
+        }
+    }
+    return a;
 }
 
 document.querySelector('.b-9').addEventListener('click', () => {
