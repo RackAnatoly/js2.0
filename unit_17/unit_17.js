@@ -111,7 +111,12 @@ document.querySelector('.b-5').onclick = () => {
 let a6 = [3, 14, 15, 92, "6", "5", "hello", 32];
 
 function t6() {
-
+a6_res = a6.filter(function (item) {
+        if (item > 14 && typeof item == 'number') {
+            return true;
+        }
+    });
+    return a6_res;
 }
 
 document.querySelector('.b-6').onclick = () => {
