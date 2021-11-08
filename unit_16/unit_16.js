@@ -240,7 +240,10 @@ document.querySelector('.b-14').addEventListener('click', f14);
 
 
 function f15() {
-
+let a15 = document.querySelectorAll('.out-15');
+    for (let item of a15) {
+        item.innerHTML = 15;
+    }
 }
 
 document.querySelector('.b-15').addEventListener('click', f15);
