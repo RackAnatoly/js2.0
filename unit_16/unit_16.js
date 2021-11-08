@@ -193,7 +193,11 @@ document.querySelector('.b-11').addEventListener('click', f11);
 let a12 = [4, 5, 6, 7];
 
 function f12() {
-
+let out = '';
+    for (let item of a12) {
+        out += item + ' ';
+    }
+    document.querySelector('.out-12').innerHTML = out;
 }
 
 document.querySelector('.b-12').addEventListener('click', f12);
