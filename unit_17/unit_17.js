@@ -194,7 +194,16 @@ document.querySelector('.b-9').onclick = () => {
 let a10 = [2, 13, 14, -7, 9, 5, 0, -2, 14];
 
 function t10() {
-
+let a = [];
+    a10.forEach(function (elem) {
+        if (elem > 0) {
+            a.push(elem);
+        } else {
+            a.push(0);
+        }
+        a10 = a;
+    })
+    return a10;
 
 }
 
