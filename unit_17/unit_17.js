@@ -70,7 +70,12 @@ document.querySelector('.b-3').onclick = () => {
 let a4 = [4, "3", 6, 7, "12", 34, "56", 78, 90, 11];
 
 function t4() {
-
+a4_res = a4.filter(function (item) {
+        if (typeof item === 'number') {
+            return true;
+        }
+    });
+    return a4_res;
 }
 
 document.querySelector('.b-4').onclick = () => {
