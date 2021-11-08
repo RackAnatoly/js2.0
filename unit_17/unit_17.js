@@ -311,6 +311,12 @@ let a15 = [
 
 function t15() {
 
+a15_res = a15.filter(function (elem) {
+        if (elem.pnum.length === 6) {
+            return true;
+        }
+    })
+    return a15_res;
 
 }
 
