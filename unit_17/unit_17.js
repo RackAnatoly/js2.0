@@ -249,7 +249,7 @@ let a13_num = 9;
 
 function t13() {
 
-
+return a13.includes(a13_num);
 }
 
 document.querySelector('.b-13').onclick = () => {
