@@ -265,7 +265,8 @@ let a14_sym = 'e';
 
 function t14() {
 
-
+let l = a14_sym.toLowerCase();
+    return a14.includes(l);
 }
 
 document.querySelector('.b-14').onclick = () => {
