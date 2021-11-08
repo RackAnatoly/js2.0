@@ -146,7 +146,20 @@ document.querySelector('.b-7').onclick = () => {
 let a8 = [3, 14, 15, 92, 7, 32, 59];
 
 function t8() {
-
+// a8_res = a8.map(function (item, num) {
+    //     if (item % 2 === 0) {
+    //         return num;
+    //     };
+    // })
+    // return a8_res;
+    let a = [];
+    for (i = 0; i < a8.length; i++) {
+        if (a8[i] % 2 === 0) {
+            a.push(i);
+        }
+    }
+    a8_res = a;
+    return a8_res;
 }
 
 document.querySelector('.b-8').onclick = () => {
