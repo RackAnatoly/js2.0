@@ -233,7 +233,7 @@ let a12 = [2, 13, 14, -7, 9, 5, 0, -2, 14];
 
 function t12() {
 
-
+return Array.isArray(a12);
 }
 
 document.querySelector('.b-12').onclick = () => {
