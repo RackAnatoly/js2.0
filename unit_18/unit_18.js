@@ -105,7 +105,10 @@ document.querySelector('.b-7').onclick = t7;
 /*  Дан массив a8 = [1,2,66,77,15] - преобразуйте ее в строку. Разделитель - дефис. Результат присвойте a8_res. Запускаться решение должно при вызове функции t8. */
 
 function t8() {
-
+let a8 = [1, 2, 66, 77, 15];
+    a8_res = a8.join('-');
+    document.querySelector('.out-8').innerHTML = a8_res;
+    console.log(a8_res);
 }
 
 document.querySelector('.b-8').onclick = t8;
@@ -115,6 +118,11 @@ document.querySelector('.b-8').onclick = t8;
 /*  Дан массив a9 = [[hi, mahai], [test, best]] - преобразуйте его в строку. Разделитель - дефис. Результат присвойте a9_res. Запускаться решение должно при вызове функции t9. Допускается лишний дефис в конце строки!!! */
 
 function t9() {
+let a9 = [['hi', 'mahai'], ['test', 'best']];
+    a9_res = a9.flat().join('-');
+    console.log(a9_res);
+
+    document.querySelector('.out-9').innerHTML = a9_res;
 
 }
 
