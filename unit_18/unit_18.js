@@ -78,7 +78,11 @@ document.querySelectorAll('.task-5').forEach(elem => {
 /*  Дана строка str6='helloworld' - преобразуйте ее в массив и присвойте a6_res. Выведите на страницу. Запускаться решение должно при вызове функции t6. */
 
 function t6() {
+let str6 = 'helloworld';
+    a6_res = str6.split('');
+    console.log(a6_res);
 
+    document.querySelector('.out-6').innerHTML = a6_res;
 }
 
 document.querySelector('.b-6').onclick = t6;
