@@ -64,12 +64,12 @@ document.querySelector('.div-5').ondblclick = t5;
 // Task 6 ============================================
 /*  Дан блок .div-6 и список .ul-6. При двойном клике на блоке скрывайте .ul-6 еcли он показан и показывайте если скрыт. Скрытие и показ делайте через добавление - удаление класса .hide */
 
-function t6() {
+
 function t6() {
     document.querySelector('.ul-6').classList.toggle('hide');
 }
 document.querySelector('.div-6').ondblclick = t6;
-}
+
 
 // ваше событие здесь!!!
 
@@ -78,8 +78,10 @@ document.querySelector('.div-6').ondblclick = t6;
 /*  Дан блок .div-7. При клике правой кнопкой мыши на блоке добавляйте ему класс .active. При повторном клике - удаляйте. */
 
 function t7() {
-
+    document.querySelector('.div-7').classList.toggle('active');
+    return false;
 }
+document.querySelector('.div-7').oncontextmenu = t7;
 
 // ваше событие здесь!!!
 
