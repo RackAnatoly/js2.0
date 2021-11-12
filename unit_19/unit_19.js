@@ -117,8 +117,9 @@ document.querySelector('.div-9').oncontextmenu = t9;
 /*  Дан блок .div-10. Внутри блока - изображение 1.png. При наведении мыши (mouseenter)  - меняйте изображение на 2.png. */
 
 function t10() {
-
+    document.querySelector('.div-10 img').src = 'img/2.png';
 }
+document.querySelector('.div-10').onmousemove = t10;
 
 // ваше событие здесь!!!
 
