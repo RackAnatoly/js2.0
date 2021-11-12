@@ -89,8 +89,14 @@ document.querySelector('.div-7').oncontextmenu = t7;
 /*  Дано checkbox .ch-8. Повесьте на него событие onchange при котором на документе отключается клик правой кнопкой мыши если checkbox выбран и отключает если не выбран. */
 
 function t8() {
-
+    if (document.querySelector('.ch-8').checked) {
+        document.body.oncontextmenu = function () {
+            return false;
+        };
+    }
+    else document.body.oncontextmenu = null;
 }
+document.querySelector('.ch-8').onchange = t8;
 
 // ваше событие здесь!!!
 
