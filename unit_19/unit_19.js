@@ -50,8 +50,14 @@ document.querySelector('.div-4').ondblclick = t4;
 /*  Дан блок .div-5.active. Добавьте на него событие двойной клик, по которому удалется класс active если он есть и добавляется если такого класса нет. */
 
 function t5() {
+    if (document.querySelector('.div-5').classList.contains('active')) {
+        document.querySelector('.div-5').classList.remove('active')
+    } else {
+        document.querySelector('.div-5').classList.add('active')
 
+    }
 }
+document.querySelector('.div-5').ondblclick = t5;
 
 // ваше событие здесь!!!
 
