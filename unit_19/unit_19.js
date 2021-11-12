@@ -105,8 +105,10 @@ document.querySelector('.ch-8').onchange = t8;
 /*  Дан блок .div-9. Внутри блока - изображение 1.png. При клике правой кнопкой мыши  - меняйте изображение на 2.png. Надеюсь вы догадаетесь изменить только src изображения? */
 
 function t9() {
-
+    document.querySelector('.div-9 img').src = 'img/2.png';
+    return false;
 }
+document.querySelector('.div-9').oncontextmenu = t9;
 
 // ваше событие здесь!!!
 
