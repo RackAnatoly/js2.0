@@ -27,9 +27,11 @@ document.querySelector('.div-2').onclick = t2;
 let w3 = 75;
 
 function t3() {
-
+    document.querySelector('.div-3').style.width = w3 + 'px';
+    w3 = w3 + 5;
+    document.querySelector('.out-3').innerHTML = document.querySelector('.div-3').style.width;
 }
-
+document.querySelector('.div-3').onclick = t3;
 // ваше событие здесь!!!
 
 
