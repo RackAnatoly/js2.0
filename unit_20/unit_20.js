@@ -40,7 +40,13 @@ document.querySelector('.i-3').onkeypress = t3;
 
 function t4(event) {
     console.log(event.keyCode);
-
+    let a = document.querySelector('.out-4');
+    // let b = event.keyCode - 32;
+    if (event.keyCode >= 92 && event.keyCode <= 122) {
+        a.innerHTML += event.key;
+    } else {
+        a.innerHTML += event.key.toLowerCase();
+    }
 }
 
 document.querySelector('.i-4').onkeypress = t4;
