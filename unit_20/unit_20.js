@@ -56,6 +56,14 @@ document.querySelector('.i-4').onkeypress = t4;
 
 function t5(event) {
     console.log(event);
+    let a = document.querySelector('.out-5');
+    // let b = event.keyCode - 32;
+    if (event.keyCode <= 97 && event.keyCode >= 65) {
+        a.innerHTML += event.key.toUpperCase();
+    } else if ((event.keyCode >= 65 && event.keyCode <= 90)) {
+        a.innerHTML += event.key;
+    }
+    // a.innerHTML += event.key.toUpperCase();
 
 }
 
