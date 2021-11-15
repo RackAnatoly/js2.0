@@ -227,15 +227,18 @@ document.querySelector('.div-18').onmouseenter = t18;
 /*  Дан блок div-19. Напишите фукнцию t19 которая выводит в данный блок его классы при событии onmouseout. */
 
 function t19() {
-
+    document.querySelector('.div-19').innerHTML = document.querySelector('.div-19').classList;
 }
+document.querySelector('.div-19').onmouseout = t19;
 // ваше событие здесь!!!
 
 
 // Task 20 ============================================
 /*  Дан элемент progress. Напишите фукнцию t20 которая увеличивает его value на 1 при каждом событии mousemove внутри progress. */
-
+let b20 = 10;
 function t20() {
-
+    b20++;
+    document.querySelector('progress').value = b20;
 }
+document.querySelector('progress').onmousemove = t20;
 // ваше событие здесь!!!
