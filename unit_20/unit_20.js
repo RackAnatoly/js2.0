@@ -24,7 +24,12 @@ document.querySelector('.i-2').onkeypress = t2;
 
 
 function t3(event) {
-
+let a = document.querySelector('.out-3');
+    if (event.keyCode >= 48 && event.keyCode <= 57) {
+        a.innerHTML = false;
+    } else {
+        a.innerHTML = true;
+    }
 }
 
 document.querySelector('.i-3').onkeypress = t3;
