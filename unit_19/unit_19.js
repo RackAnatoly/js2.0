@@ -216,7 +216,10 @@ document.querySelector('.b-17_off').onclick = t17Off;
 /*  Дан блок div-18. Напишите фукнцию t18 которая выводит в данный блок его ширину при событии onmouseenter. */
 
 function t18() {
-
+function t18(e) {
+    document.querySelector('.div-18').innerHTML = e.target.clientWidth;
+}
+document.querySelector('.div-18').onmouseenter = t18;
 }
 // ваше событие здесь!!!
 
