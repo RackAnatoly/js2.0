@@ -73,7 +73,10 @@ document.querySelector('.i-5').onkeydown = t5;
 /*  Дан input .i-6. Напишите функцию t6, которая позволяет вводить в i-6 только символы в нижнем регистре. Т.е. мы до функции создаем строку. Внутри функции проверяем код символа. Если символ - в нижнем регистре - добавляем в строку. Потом принудительно присваиваем строку в value input i-6. Чтобы блокировать стандартный вывод в input в конце функции пишем return false;  */
 
 function t6() {
-    // return false;
+   
+    if (event.key !== event.key.toLowerCase()) {
+        return false;
+    }
 }
 
 document.querySelector('.i-6').onkeypress = t6;
