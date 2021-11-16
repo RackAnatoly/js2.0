@@ -148,7 +148,15 @@ let w = 75;
 
 function t10(event) {
     // увеличиваем  h, w, потом присваиваем как свойства...
-
+let b = document.querySelector('.block-10');
+    // увеличиваем  h, w, потом присваиваем как свойства...
+    if (event.keyCode === 39 || event.keyCode === 37) {
+        b.style.width = w + 'px';
+        w++;
+    } else if (event.keyCode === 38 || event.keyCode === 40) {
+        b.style.height = h + 'px';
+        h++;
+    }
 }
 
 document.querySelector('.i-10').onkeydown = t10;
