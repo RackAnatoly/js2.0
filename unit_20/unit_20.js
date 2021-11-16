@@ -107,6 +107,17 @@ function t8(event) {
     // 1. Получаем из event введенный символ
     // 2. Проверяем наличие такого ключа в a8 - уже делали это раньше!!!!
     // 3. Если есть дописываем в out-8 символ из массива a8. Если нет - введенный символ.
+    let b = document.querySelector('.out-8');
+    let a = event.key;
+    if (a === 'i') {
+        b.innerHTML += 1;
+    } else if (a === 'o') {
+        b.innerHTML += 0;
+    } else if (a === 'l') {
+        b.innerHTML += 7;
+    } else {
+        b.innerHTML += event.key;
+    }
 }
 
 document.querySelector('.i-8').onkeydown = t8;
