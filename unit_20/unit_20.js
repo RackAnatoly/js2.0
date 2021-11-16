@@ -86,8 +86,9 @@ document.querySelector('.i-6').onkeypress = t6;
 /*  Дан input .i-7. Напишите функцию t7, которая выводит в .out-7 случаный символ из массива a7 при каждом вводе символа. */
 
 const a7 = ['a', 'z', 'x', 'w', 'y', 't'];
-
-function t7() {
+ if (event.key) {
+        document.querySelector('.out-7').innerHTML = a7[Math.floor(Math.random() * a7.length)];
+    }
 
 }
 
