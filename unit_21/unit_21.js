@@ -80,7 +80,11 @@ function t7() {
 // Task 8 ============================================
 /*  Дан блок div-8. Добавьте на него событие touch, которое при срабатывании окрашивает блок случаным цветом из массива a8=[red, green, blue, orange, pink, yellow] */
 
+let a8 = ['red', 'green', 'blue', 'orange', 'pink', 'yellow']
+
+document.querySelector('.div-8').addEventListener('touchstart', t8);
 function t8() {
+    document.querySelector('.div-8').style.background = a8[Math.floor(Math.random() * a8.length)]
 
 }
 
