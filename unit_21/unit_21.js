@@ -138,22 +138,44 @@ function t11(event) {
 <p>5. Добавьте во все действия следующее - в изображении img-12-max заменяется src на активную. Т.е. произошло событие - заменилась главная картинка.</p>
 */
 
-const images = document.querySelectorAll('.img-12-min');
-let count = 0; // переменная, которая указывает на номер активного изображения в images
+//const next = document.querySelectorAll('.next');
+//next.onclick = nextFunction;
 
-const next = document.querySelectorAll('.next');
-next.onclick = nextFunction;
+//const prev = document.querySelectorAll('.prev');
+//prev.onclick = prevFunction;
 
-const prev = document.querySelectorAll('.prev');
-prev.onclick = prevFunction;
+const images = document.querySelectorAll(".img-12-min");
+let count = 0; //           номер активного изображения
 
+//    3 функции фиксирующие точку отсчёта в зависимости от нажатой кнопки
 function nextFunction() {
-
+  if (count + 1 < images.length) count++;
+  else count = 0;
+  change();
 }
-
 function prevFunction() {
-
+  if (count == 0) count = images.length - 1;
+  else count--;
+  change();
 }
+function resetFunction() {
+  count = 0;
+  change();
+}
+
+//       функция вносящая изменения
+function change() {
+  images.forEach((elem) => elem.classList.remove("active-img", "img-12-max"));
+  images[count].classList.add("active-img");
+  document
+    .querySelector(".img-12-max")
+    .setAttribute("src", `img/${count + 1}.png`);
+}
+
+//        события
+document.querySelector(".next").onclick = nextFunction;
+document.querySelector(".prev").onclick = prevFunction;
+document.querySelector(".reset").onclick = resetFunction;
 
 
 // ваше событие здесь!!!
