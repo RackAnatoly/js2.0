@@ -91,7 +91,11 @@ document.querySelector('.b-7').onclick = t7;
 
 function t8() {
 
+    a7.pop();
+    localStorage.setItem('a7', JSON.stringify(a7));
+    console.log(a7);
 }
+document.querySelector('.b-8').onclick = t8;
 
 // ваше событие здесь!!!
 
