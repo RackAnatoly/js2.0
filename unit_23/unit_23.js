@@ -68,8 +68,9 @@ document.querySelector('.b-5').onclick = t5;
 /*  Создайте функцию t6 которая очищает весь LS. Запуск по кнопке b-6*/
 
 function t6() {
-
+    localStorage.clear();
 }
+document.querySelector('.b-6').onclick = t6;
 
 // ваше событие здесь!!!
 
