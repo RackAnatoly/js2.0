@@ -26,11 +26,12 @@ document.querySelector('.b-2').onclick = t2;
 function t3() {
     let c = '';
     let out = document.querySelector('.out-3');
-    let d=localStorage.getItem('a2');
+    let a2 = localStorage.getItem('a2');
+    a2 = JSON.parse(a2);
     for (let i = 0; i < a2.length; i++) {
         c += i + ' ' + a2[i] + '<br>';
     }
-    out.innerHTML = localStorage.getItem('a2');
+    out.innerHTML = c;
 }
 document.querySelector('.b-3').onclick = t3;
 
