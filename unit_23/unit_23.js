@@ -77,11 +77,13 @@ document.querySelector('.b-6').onclick = t6;
 
 // Task 7 ============================================
 /*  Создайте input i-7 куда пользователь может вводить числа и строки. Создайте массив a7. Когда пользователь нажимает кнопку b-7 число должно добавляться в массив. Массив должен сохраняться в LS с ключем a7.*/
-
+let a7 = [];
 function t7() {
-
+    let i7 = document.querySelector('.i-7').value;
+    a7.push(i7);
+    localStorage.setItem('a7', JSON.stringify(a7));
 }
-
+document.querySelector('.b-7').onclick = t7;
 // ваше событие здесь!!!
 
 // Task 8 ============================================
