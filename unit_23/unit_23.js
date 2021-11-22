@@ -51,8 +51,16 @@ function t4() {
 /*   При нажатии кнопки b-5 выведите из LS сохранненный массив a4. Выведите в out-5 в формате ключ пробел значение перенос строки. */
 
 function t5() {
-
+    let c = '';
+    let out = document.querySelector('.out-5');
+    let a4 = localStorage.getItem('a4');
+    a4 = JSON.parse(a4);
+    for (let key in a4) {
+        c += key + ' ' + a4[key] + '<br>';
+    }
+    out.innerHTML = c;
 }
+document.querySelector('.b-5').onclick = t5;
 
 // ваше событие здесь!!!
 
